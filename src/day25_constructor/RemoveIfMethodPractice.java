@@ -18,23 +18,28 @@ public class RemoveIfMethodPractice {
         dogs[4].setInfo("Bella", "Bichon Frise", "Small", 'F', 3, "White");
         dogs[5].setInfo("Loki", "Chow Chow", "Medium", 'M', 7, "Gold");
 
-
-        /*for (Dog dog : dogs) {
-            if (dog.size.equalsIgnoreCase("small")) {
-                smallDogs.add(dog);
-            }
-        }
-        System.out.println(smallDogs);*/
-
         ArrayList<Dog> smallDogs = new ArrayList<>(Arrays.asList(dogs));
 
-        smallDogs.removeIf(p -> !p.size.equalsIgnoreCase("small"));
+        /*for (Dog dog : dogs) {
+            if (dog.size.equalsIgnoreCase("Small")) {
+                smallDogs.add(dog);
+            }
+        }*/
+
+        smallDogs.removeIf(p -> !p.size.equalsIgnoreCase("Small"));
 
         System.out.println(smallDogs);
 
         System.out.println("------------------------------------------------------------");
 
         ArrayList<Dog> youngDogs = new ArrayList<>(Arrays.asList(dogs));
+
+
+        /*for (Dog dog : dogs) {
+            if (dog.age <= 4) {
+                youngDogs.add(dog);
+            }
+        }*/
 
         youngDogs.removeIf(p -> p.age > 4);
         System.out.println(youngDogs);
