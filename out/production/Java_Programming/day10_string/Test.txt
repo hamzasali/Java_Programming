@@ -1,0 +1,2 @@
+This is 1st ever text file created in Intelli J.
+Text extension is .txt
