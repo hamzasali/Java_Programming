@@ -18,6 +18,12 @@ public class IPhone {
         System.out.println("Color: " + color);
     }*/
 
+    public IPhone(String model, String color, double price) {
+        this.model = model;
+        this.color = color;
+        this.price = price;
+    }
+
     public void printPhoneInfo() {
         System.out.println("brand: " + brand);
         System.out.println("Model: " + model);
